@@ -1,0 +1,14 @@
+3.Read about the difference between windows,screen and document in javascript?
+
+window:Each browser tab has its own top-level window object. Each <iframe> (and deprecated <frame>)
+element has its own window object too, nested within a parent window. Each of these windows gets
+its own separate global object.
+
+document:Each window object has a document object to be rendered. These objects get confused in part
+because HTML elements are added to the global object when assigned a unique id. E.g., in the
+HTML snippet
+
+screen :The window object also has a screen object with properties describing the physical display:
+*screen properties width and height are the full screen
+*screen properties availWidth and availHeight omit the toolbar
+
